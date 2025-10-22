@@ -3,7 +3,7 @@ export default {
   verbose: true,
   transform: {},
   moduleFileExtensions: ["js"],
-  testMatch: ["**/__tests__/**/*.test.js"],
+  testMatch: ["**/tests/**/*.test.js"],
   collectCoverage: true,
   coverageDirectory: "coverage",
 };

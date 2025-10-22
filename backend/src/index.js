@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import app from './server.js';
 import logger from './config/logger.js';
 import './db/db.js';
+import "./config/redis.js"
 
 dotenv.config();
 
@@ -11,3 +12,5 @@ app.listen(PORT, () => {
   logger.info(`Server Is run http://localhost:${PORT}`);
   logger.info(`Swagger docs at http://localhost:${PORT}/api-docs`);
 });
+
+export default app;
